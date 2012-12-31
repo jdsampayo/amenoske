@@ -1,0 +1,195 @@
+body
+  padding-top: 90px
+  background-image: image-url("main-bg.png")
+
+.navbar-inner
+  background-image: image-url("dark_Tire.png")
+  background-color: none
+  padding: 10px 0
+
+#myCarousel
+  background: #e3e3e3
+  padding: 8px
+  border: 1px solid #9b9c9c
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: 0px 1px 1px 0px #858585
+  -moz-box-shadow: 0px 1px 1px 0px #858585
+  box-shadow: 0px 1px 1px 0px #858585
+
+.h-title
+  padding: 0 0 20px 0
+
+p
+  padding: 8px
+
+h2
+  position: relative
+  margin-top: 20px
+  &.one
+    margin-top: 0
+    &:before
+      content: ""
+      display: block
+      border-top: solid 10px #656565
+      width: 100%
+      height: 1px
+      position: absolute
+      top: 45%
+      z-index: 1
+    span
+      background-image: image-url("main-bg.png")
+      padding: 0  20px 0 0
+      position: relative
+      z-index: 5
+
+.box
+  background: #e3e3e3
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  -webkit-box-shadow: 0px 1px 1px 0px #858585
+  -moz-box-shadow: 0px 1px 1px 0px #858585
+  box-shadow: 0px 1px 1px 0px #858585
+
+.sc-player
+  ol, li
+    margin: 0
+    padding: 0
+    list-style: none
+
+.sc-trackslist
+  float: left
+  font-size: 18px
+  margin: 0 6px
+  a
+    padding: 0 0 10px 0
+    float: left
+
+.sc-player
+  a
+    text-decoration: none
+    padding: 0 10px 10px
+  .sc-artwork-list
+    display: block
+    padding: 0 0 10px 0
+    li
+      list-style-type: none
+      display: none
+      &.active
+        list-style-type: none
+        display: block
+  .sc-controls
+    display: block
+    width: 28px
+    height: 28px
+    float: left
+    padding: 10px
+    a
+      display: block
+      width: 32px
+      height: 32px
+      padding: 0
+      &.sc-pause
+        display: none
+        width: 32px
+        height: 32px
+  &.playing .sc-controls a
+    &.sc-play
+      display: none
+    &.sc-pause
+      display: block
+
+.sc-scrubber
+  position: relative
+  .sc-time-span
+    height: 8px
+    margin: 22px 7px 10px
+    position: relative
+    background-color: #666
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    float: left
+  .sc-buffer, .sc-played
+    height: 8px
+    position: absolute
+    top: 0
+    -webkit-border-radius: 15px
+    -moz-border-radius: 15px
+    border-radius: 15px
+  .sc-time-indicators
+    color: #585858
+    display: block
+    float: right
+    padding: 0 7px 10px
+  .sc-time-span img
+    width: 100%
+  .sc-buffer
+    background-color: #333
+    z-index: 1
+    position: absolute
+  .sc-played
+    background-color: #333
+    z-index: 1
+    position: absolute
+    background: rgb(77, 153, 224)
+    background: -moz-linear-gradient(top, rgba(77, 153, 224, 1) 0%, rgba(59, 127, 186, 1) 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(77, 153, 224, 1)), color-stop(100%, rgba(59, 127, 186, 1)))
+    background: -webkit-linear-gradient(top, rgba(77, 153, 224, 1) 0%, rgba(59, 127, 186, 1) 100%)
+    background: -o-linear-gradient(top, rgba(77, 153, 224, 1) 0%, rgba(59, 127, 186, 1) 100%)
+    background: -ms-linear-gradient(top, rgba(77, 153, 224, 1) 0%, rgba(59, 127, 186, 1) 100%)
+    background: linear-gradient(top, rgba(77, 153, 224, 1) 0%, rgba(59, 127, 186, 1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d99e0', endColorstr='#3b7fba',GradientType=0 )
+    z-index: 799
+
+.sc-player
+  .sc-controls a
+    color: transparent
+    background: image-url("play.png")
+    &:hover
+      background: image-url("play-hover.png")
+  &.playing .sc-controls a.sc-pause
+    &:hover
+      background: image-url("pause-hover.png")
+    background: image-url("pause.png")
+  .hidden
+    display: none
+
+.sc-player-engine-container
+  width: 1px
+  height: 1px
+  position: fixed
+  top: -555px
+  left: -555px
+
+.twitter-content
+  position: relative
+  float: left
+
+.tweet, .query
+  font-family: "CuprumFFURegular",Verdana,Geneva,sans-serif
+  background-color: rgba(31, 31, 31, 0.4)
+  display: inline-block
+  margin: 20px
+  padding: 8px 20px
+  position: relative
+  border: 1px dashed rgba(126, 126, 126, 0.2)
+  font-size: 14px
+
+.tweet_list
+  list-style: none
+  margin: 0
+  padding: 0
+  overflow-y: hidden
+
+.page-title h2 .tweet_list li
+  overflow-y: auto
+  overflow-x: hidden
+  list-style-type: none
+
+.tweet_list li a
+  text-decoration: none
+  &:hover
+    text-decoration: underline

@@ -1,0 +1,41 @@
+%section#home-content
+  / Start Home Content
+  .slider-content.drop-shadow.lifted
+    / Start Slide Content
+    #myCarousel.carousel.slide
+      / Carousel items
+      .carousel-inner
+        .active.item
+          %img{:alt => "", :src => image_path("img-1.jpg")}/
+        .item
+          %img{:alt => "", :src => image_path("img-1.jpg")}/
+        .item
+          %img{:alt => "", :src => image_path("img-1.jpg")}/
+      / Carousel nav
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+  / End Slide Content
+.h-title
+  %h2.one
+    %span Noticias
+%ul.thumbnails
+  %li.box.span3
+    .thumbnail
+      %img{:alt => "", :src => "http://placehold.it/260x180"}
+        %h5 Thumbnail label
+        %p Thumbnail caption right here...
+  %li.box.span3
+    .thumbnail
+      %img{:alt => "", :src => "http://placehold.it/260x180"}
+        %h5 Thumbnail label
+        %p Thumbnail caption right here...
+  %li.box.span3
+    .thumbnail
+      %img{:alt => "", :src => "http://placehold.it/260x180"}
+        %h5 Thumbnail label
+        %p Thumbnail caption right here...
+  %li.box.span3
+    .thumbnail
+      %img{:alt => "", :src => "http://placehold.it/260x180"}
+        %h5 Thumbnail label
+        %p Thumbnail caption right here...

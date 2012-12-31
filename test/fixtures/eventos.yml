@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fecha: 2012-12-31 00:38:48
+  ubicacion: MyString
+  precio: 1
+  descripcion: MyText
+
+two:
+  fecha: 2012-12-31 00:38:48
+  ubicacion: MyString
+  precio: 1
+  descripcion: MyText

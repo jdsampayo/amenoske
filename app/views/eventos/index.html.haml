@@ -1,0 +1,16 @@
+- model_class = Evento
+.h-title
+  %h2.one
+    %span=t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:fecha)
+      %th= model_class.human_attribute_name(:ubicacion)
+      %th= model_class.human_attribute_name(:precio)
+  %tbody
+    - @eventos.each do |evento|
+      %tr
+        %td= evento.fecha
+        %td= link_to evento.ubicacion, evento_path(evento)
+        %td= evento.precio
