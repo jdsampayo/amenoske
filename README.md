@@ -6,7 +6,7 @@ Include a README file with the description of the technology used and how you de
 
 ## Instructions
 
-- Visit the website: https://xchange-test.elgransuspiro.com/
+- Visit the [test website](http://xchange-test.elgransuspiro.com/)
 - Use your credentials shared by email in order to login.
 - Visit and change in the Billing Information page the credit card of your account.
 - Write a script to do the above steps automatically.
